@@ -27,19 +27,18 @@ export default function Home() {
           <nav className="p-10 mb-2 flex justify-between">
             <div>
               <Image src={rulo} height={30} width={30} className="inline-block mr-3 dark:fill-slate-200" />
-              <h1 className="text-xl font-burtons dark:text-slate-200 inline-block">Facundo Rubino</h1>
+              <h1 className="text-xl dark:text-slate-200 inline-block">Facundo Rubino</h1>
             </div>
-
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:text-slate-200" />
               </li>
-              <li><a onClick={() => languageHandler()} className="bg-gradient-to-r from-red-600 to-red-400 text-white px-4 py-2 rounded-md ml-8 cursor-pointer" >{Lang}</a></li>
+              <li><a onClick={() => languageHandler()} className="bg-gradient-to-r from-orange-300 to-orange-500 text-white px-4 py-2 rounded-md ml-8 cursor-pointer" >{Lang}</a></li>
             </ul>
           </nav>
           <div className="text-center p-5">
-            <h2 className="text-3xl py-2 text-red-600 font-medium md:text-4xl">Facundo Rubino</h2>
-            <h3 className="text-xl font-medium md:text-2xl dark:text-slate-200">{Lang == `ESP` ? `Desarrollador FrontEnd - Diseñador Multimedia` : `FrontEnd Developer - Multimedia Designer`}</h3>
+            <h2 className="text-3xl py-2 text-gradient-to-r from-orange-300 to-orange-500 font-medium md:text-4xl">Facundo Rubino</h2>
+            <h3 className="text-4xl font-extrabold uppercase text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-500">{Lang == `ESP` ? `Desarrollador FrontEnd ` : `FrontEnd Developer `}</h3>
             <p className="text-md py-3 leading-7 text-gray-800 dark:text-slate-200">{Lang == `ESP` ? `Como persona organizada, responsable y con una gran motivación, soy capaz de adaptarme a cualquier circunstancia, dar siempre lo mejor de mí en cualquier proyecto y disfrutar de trabajar en equipo.
               Dado mi trayecto académico, me encuentro en la búsqueda de definirme como un perfil Full Stack, capaz de dar soluciones eficientes, lógicas y versátiles.`
               : ` I received my degree in Multimedia Design at Universidad ORT Uruguay, where I learned technologies such as HTML, CSS, Javascript, React JS, PHP, Ionic, and Bootstrap. I am currently studying to become a IT Analyst at the same university, where I am learning new backend skills with the goal of building a Full Stack profile. In my free time, I have also been taking courses in Tailwind Css and Flutter/Dart.`}
@@ -48,7 +47,7 @@ export default function Home() {
           <div className="text-2xl flex justify-center gap-8 pb-3 text-gray-500 ">
             <AiFillLinkedin /><AiFillGithub /><AiFillInstagram />
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-red-500 rounded-full w-60 h-60 mt-10 overflow-hidden">
+          <div className="relative mx-auto bg-gradient-to-b from-orange-500 rounded-full w-60 h-60 mt-10 overflow-hidden">
             <Image src={facu} className="ml-6 mt-3" layout="" objectFit="" />
           </div>
         </section>
@@ -126,53 +125,7 @@ export default function Home() {
                 UML
               </div>
             </div>
-
-
           </div>
-
-
-
-          {/*  <div className="md:flex gap-10  ">
-            <div className="text-center shadow-xl p-10 rounded-xl my-5 dark:bg-slate-200">
-              <Image className="mx-auto" src={front} width={80} height={80} />
-              <h3 className="text-lg font-medium pt-5 pb-4 text-teal-600" >{Lang == `ESP` ? `Tecnologías FrontEnd/Mobile` : `FrontEnd/Mobile Technologies`}</h3>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" /></a>
-              <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" /></a>
-              <a href="https://dart.dev/" target="_blank" rel="noreferrer"><im className="inline ml-2" g src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/dart-colored.svg" width="36" height="36" alt="Dart" /></a>
-              <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a>
-              <a href="https://reactjs.org/" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" /></a>
-              <a href="https://jquery.com/" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/jquery-colored.svg" width="36" height="36" alt="JQuery" /></a>
-              <a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
-              <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tailwindcss-colored.svg" width="36" height="36" alt="TailwindCSS" /></a>
-              <a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg" width="36" height="36" alt="Bootstrap" /></a>
-              <a href="https://redux.js.org/" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/redux-colored.svg" width="36" height="36" alt="Redux" /></a>
-              <a href="https://nextjs.org/docs" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nextjs-colored.svg" width="36" height="36" alt="NextJs" /></a>
-
-              <a href="https://flutter.dev/" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/flutter-colored.svg" width="36" height="36" alt="Flutter" /></a>
-
-            </div>
-            <div className="text-center shadow-xl p-10 rounded-xl my-5 dark:bg-slate-200">
-              <Image className="mx-auto" src={back} width={80} height={80} />
-              <h3 className="text-lg font-medium pt-5 pb-2 text-teal-600" >{Lang == `ESP` ? `Tecnologías BackEnd` : `Backend Technologies`}</h3>
-              <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="36" height="36" alt="MySQL" /></a>
-              <a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" /></a>
-              <a href="https://www.php.net/" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/php-colored.svg" width="36" height="36" alt="PHP" /></a>
-              <a href="https://docs.microsoft.com/en-us/dotnet/csharp/" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/csharp-colored.svg" width="36" height="36" alt="C#" /></a>
-
-           
-          <div className="text-center shadow-xl p-10 rounded-xl my-5 dark:bg-slate-200">
-            <Image className="mx-auto" src={design} width={80} height={80} />
-            <h3 className="text-lg font-medium pt-5 pb-2 text-teal-600" >{Lang == `ESP` ? `Software de diseño` : `Design Software`}</h3>
-            <a href="https://www.adobe.com/uk/products/photoshop.html" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/photoshop-colored.svg" width="36" height="36" alt="Photoshop" /></a>
-            <a href="adobe.com/uk/products/illustrator.html" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/illustrator-colored.svg" width="36" height="36" alt="Illustrator" /></a>
-            <a href="https://www.adobe.com/uk/products/aftereffects.html" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/aftereffects-colored.svg" width="36" height="36" alt="After Effects" /></a>
-            <a href="https://www.adobe.com/uk/products/premiere.html" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/premierepro-colored.svg" width="36" height="36" alt="Premiere Pro" /></a>
-            <a href="https://www.adobe.com/uk/products/xd.html" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/xd-colored.svg" width="36" height="36" alt="XD" /></a>
-            <a href="https://www.figma.com/" target="_blank" rel="noreferrer"><img className="inline ml-2" src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg" width="36" height="36" alt="Figma" /></a>
-          </div>
-          
-        </div>
-         </div> */}
         </section>
 
         {/* Portfolio */}

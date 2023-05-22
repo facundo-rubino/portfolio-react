@@ -8,8 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        openSans: "openSans",
-        burtons: "burtons",
+        SourceSans: ["Source Sans Pro", "sans-serif"]
       }
     },
   },
