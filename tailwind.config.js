@@ -9,8 +9,10 @@ module.exports = {
     extend: {
       fontFamily: {
         SourceSans: ["Source Sans Pro", "sans-serif"]
-      }
+      },
+
     },
   },
   plugins: [],
+
 }
