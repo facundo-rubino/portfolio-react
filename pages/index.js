@@ -2,7 +2,7 @@ import Head from 'next/head'
 import { useState } from 'react'
 
 import { BsFillMoonStarsFill } from 'react-icons/bs'
-import { FaFileDownload, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 
 import facu from "../public/Dibujo_sFondo.png";
