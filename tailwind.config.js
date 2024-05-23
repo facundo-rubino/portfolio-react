@@ -10,7 +10,9 @@ module.exports = {
       fontFamily: {
         SourceSans: ["Source Sans Pro", "sans-serif"]
       },
-
+      backgroundImage: {
+        "parallax": "url('../public/melinderPortfolio.jpg')",
+      },
     },
   },
   plugins: [],
